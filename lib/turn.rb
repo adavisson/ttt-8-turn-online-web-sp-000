@@ -37,7 +37,7 @@ end
 #Add a valid move to the board
 def move(board, idx, token = "X")
   board[idx] = token
-  return board
+  #return board
 end
 
 #Method to go through all the steps of a players return
@@ -45,4 +45,10 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   idx = input_to_index(input)
+  if valid_move?(board, idx)
+    move(board, idx)
+  else
+    puts "Invalid Move"
+    turn(board)
+  end
 end
