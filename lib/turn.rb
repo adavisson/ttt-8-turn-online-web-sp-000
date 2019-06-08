@@ -27,5 +27,6 @@ end
 #Accepts input of the space the user wants to use and then returns the
 #corresponding index in the array
 def input_to_index(input)
-  
+  index = input -1
+  return index
 end
