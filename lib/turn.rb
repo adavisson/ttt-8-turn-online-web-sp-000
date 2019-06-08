@@ -13,3 +13,11 @@ def position_taken?(board, idx)
     return true
   end
 end
+
+def valid_move?(boad, idx)
+  if idx.between?(0, 8) && !position_taken?(board, idx)
+    return true
+  else
+    return false
+  end
+end
