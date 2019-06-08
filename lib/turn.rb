@@ -43,4 +43,5 @@ end
 #Method to go through all the steps of a players return
 def turn(board)
   puts "Please enter 1-9:"
+  input = gets.trim 
 end
