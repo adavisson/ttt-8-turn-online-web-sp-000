@@ -16,7 +16,7 @@ def position_taken?(board, idx)
 end
 
 #Method to determine if the move the player wants to make is valid
-def valid_move?(boad, idx)
+def valid_move?(board, idx)
   if idx.between?(0, 8) && !position_taken?(board, idx)
     return true
   else
