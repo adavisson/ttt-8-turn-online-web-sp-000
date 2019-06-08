@@ -34,4 +34,7 @@ def input_to_index(input)
   end
 end
 
-dev move(board)
+def move(board, idx, token = "X")
+  board[idx] = token
+  return board
+end
