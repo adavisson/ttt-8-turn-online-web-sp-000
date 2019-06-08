@@ -33,3 +33,5 @@ def input_to_index(input)
     return -1
   end
 end
+
+dev move(board)
