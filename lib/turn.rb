@@ -39,3 +39,8 @@ def move(board, idx, token = "X")
   board[idx] = token
   return board
 end
+
+#Method to go through all the steps of a players return
+def turn(board)
+  puts "Pleas enter 1-9:"
+end
